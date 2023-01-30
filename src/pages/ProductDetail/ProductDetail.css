@@ -1,0 +1,42 @@
+.prd-detail-wrap .left-half,
+.prd-detail-wrap .right-half{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.prd-detail-wrap .right-half{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.prd-detail-wrap .prd-title{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.prd-detail-wrap .left-half img{
+    width: 100%;
+}
+
+.prd-detail-wrap .prd-img-wrap{
+    width: 100%;
+    border: 1px solid #444;
+}
+
+.prd-detail-wrap .prd-img-wrap img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.prd-detail-wrap .right-half .prd-price{
+    font-size: 22px;
+    margin: 0 0 20px;
+    color: #e00000;
+}
+
+.prd-detail-wrap .right-half .prd-price span{
+    font-weight: 300;
+    color: #000;
+    text-decoration: line-through;
+}

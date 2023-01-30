@@ -1,0 +1,135 @@
+.main-footer{
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.main-footer .f-colmn{
+    width: 25%;
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-footer .fmenu-heading{
+    margin: 0 0 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.main-footer .brands-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main-footer .brands-icons img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.main-footer .fmenu{
+    padding: 0;
+    margin: 0 0 26px;
+    list-style: none;
+}
+
+.main-footer .fmenu > li{
+    margin: 10px 0;
+}
+
+.main-footer .fmenu > li > a{
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.main-footer .fmenu > li > a:hover{
+    text-decoration: underline;
+    color: #1377c9;
+}
+
+.main-footer p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.main-footer p span{
+    font-weight: 700;
+}
+
+.main-footer .offer-frm .frm-fld{
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin: 20px 0 15px;
+}
+
+.main-footer .offer-frm .frm-fld:focus{
+    border: 1px solid #000;
+}
+
+.main-footer .offer-frm .blu-btn{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-footer .f-links{
+    margin-bottom: 25px;
+}
+
+.main-footer .f-links a{
+    color: #000;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.main-footer .f-links a:hover,
+.main-footer .f-links a:focus{
+    color: #1377c9;
+}
+
+.main-footer .app-icons-wrap{
+    margin-bottom: 30px;
+}
+
+.main-footer .app-icons-wrap .app-icons{
+    height: 41px;
+    margin-bottom: 12px;
+}
+
+.main-footer h4{
+    text-align: center;
+    margin: 45px auto;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+}
+
+.main-footer .btm-icons{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-footer .btm-icons img{
+    height: 20px;
+    margin: 20px;
+}
+
+.main-footer .copy-txt{
+    font-size: 12px;
+    text-align: center;
+}

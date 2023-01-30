@@ -1,0 +1,35 @@
+.slider-item{
+    padding: 15px;
+    margin: 0 10px;
+
+    border: 0.5px solid #d6d6d6;
+    border-radius: 0.5rem;
+}
+
+.slider-item a{
+    text-decoration: none;
+}
+
+.slider-item img{
+    width: 100%;
+}
+
+.slider-item h3{
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #e00000;
+}
+
+.slider-item h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0 0;
+    text-decoration: line-through;
+    color: #000;
+}
+
+.slider-item p{
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #000;
+}

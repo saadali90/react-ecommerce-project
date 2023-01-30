@@ -1,0 +1,107 @@
+.headertop-section{
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    padding: 15px 0;
+}
+
+.headertop-wrapper .left-box,
+.headertop-wrapper .mid-box,
+.headertop-wrapper .right-box{
+    float: left;
+    width: 67%;
+}
+
+.headertop-wrapper .left-box{
+    width: 15%;
+    margin-right: 1%;
+}
+
+.headertop-wrapper .right-box{
+    margin-left: 1%;
+    width: 15%;
+    text-align: right;
+}
+
+.headertop-wrapper .left-box .stiky-menu-wrap,
+.headertop-wrapper .left-box .logo-wrap{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.headertop-wrapper .left-box .logo-wrap{
+    width: 110px;
+    margin-left: 10px;
+}
+
+.headertop-wrapper .left-box .menu-btn{
+    border: none;
+    background: transparent;
+    margin-top: 5px;
+}
+
+.headertop-wrapper .left-box .menu-btn svg,
+.headertop-wrapper .left-box .logo-wrap svg,
+.headertop-wrapper .right-box svg,
+.headertop-wrapper .right-box .user-box h3{
+    color: #194e89;
+}
+
+.headertop-wrapper .mid-box .search-box{
+    text-align: center;
+    background-color: #fff;
+    cursor: default;
+    padding: 5px 25px;
+    border-radius: 40px;
+    width: 100%;
+    color: #000;
+    border: 2px solid #d6d6d6;
+    box-sizing: border-box;
+}
+
+.headertop-wrapper .mid-box .search-box p,
+.headertop-wrapper .mid-box .search-box svg{
+    display: inline-block;
+    vertical-align: top;
+    margin: .2rem;
+}
+
+.headertop-wrapper .right-box .user-box h3{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+.headertop-wrapper .right-box > div{
+    text-align: right;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.blu-cta-section{
+    background-color: #194e89;
+}
+
+.blu-cta-wrap .left-box svg{
+    color: #fff;
+    height: 13px;
+    margin: 10px 20px 10px 0;
+}
+
+.red-cta-section{
+    background-color: rgb(238, 39, 55);
+    padding: 8px 0;
+    text-align: center;
+}
+
+.red-cta-section p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.red-cta-section p span{
+    font-weight: 700;
+}
