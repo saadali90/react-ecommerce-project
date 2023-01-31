@@ -1,13 +1,54 @@
-import Prd1 from "../../assets/img/products/prd-1.jpg";
+import { useEffect } from "react";
+/*import Prd1 from "../../assets/img/products/prd-1.jpg";
 import Prd2 from "../../assets/img/products/prd-2.jpg";
 import Prd3 from "../../assets/img/products/prd-3.jpg";
 import Prd4 from "../../assets/img/products/prd-4.jpg";
 import Prd5 from "../../assets/img/products/prd-5.jpg";
 import Prd6 from "../../assets/img/products/prd-6.jpg";
 import Prd7 from "../../assets/img/products/prd-7.jpg";
-import Prd8 from "../../assets/img/products/prd-8.jpg";
+import Prd8 from "../../assets/img/products/prd-8.jpg";*/
 
+const ProductsData = () => {
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch("https://react-http-f842c-default-rtdb.asia-southeast1.firebasedatabase.app/products.json");
+    
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+        // if above is true, lines below won't executes
+      }
 
+      const responseData = await response.json();
+
+      console.log("response Data =>", responseData);
+
+       // In firebase we have products objects with Id's, but we want in Array form so:
+      const loadedProducts = [];
+
+      for (const key in responseData) {
+        loadedProducts.push({
+          id: key,
+          title: responseData[key].title,
+          description: responseData[key].description,
+          price: responseData[key].price,
+          salePrice: responseData[key].saleprice,
+          imageUrl: responseData[key].imgUrl
+        });
+      }
+
+      console.log("loadedMeals =>", loadedProducts);
+
+    };
+
+    fetchProducts().catch((error) => {
+      return(error.message);
+    });
+
+    
+  }, []);
+};
+
+/*
 const productsData = [
   {
     id: "prd1",
@@ -72,5 +113,6 @@ const productsData = [
     prdImage: Prd8,
   },
 ];
+*/
 
-export default productsData;
+export default ProductsData;

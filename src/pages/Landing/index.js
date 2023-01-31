@@ -4,7 +4,7 @@ import MainBanner from "./MainBanner";
 
 import AppContainer from "../../components/UI/AppContainer";
 import HealthyProducts from "../../components/Products/HealthyProducts";
-import AllProducts from "../../components/Products/AvailableProducts";
+import AvailableProducts from "../../components/Products/AvailableProducts";
 
 import BannerClearance from "../../assets/img/banner-clearance.jpg";
 import BannerValentine from "../../assets/img/banner-valentine.jpg";
@@ -12,8 +12,16 @@ import TopCategories from "../../components/Products/TopCategories";
 import Cta1 from "../../assets/img/cta1.jpg";
 import Cta2 from "../../assets/img/cta2.jpg";
 import Cta3 from "../../assets/img/cta3.jpg";
+import { useEffect } from "react";
+import { getAllProducts } from "../../lib/api";
 
 export const Landing = () => {
+
+  useEffect(() => {
+    getAllProducts();
+  }, []);
+
+
   return (
     <>
       <MainBanner />
@@ -56,7 +64,7 @@ export const Landing = () => {
         </div>
       </AppContainer>
 
-      <AllProducts />
+      <AvailableProducts />
 
       <AppContainer>
         <div className="para home-para">
