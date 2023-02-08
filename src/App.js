@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/UI/Layout/Layout";
 import { Landing } from "./pages/Landing";
+import NotFound from "./pages/NotFound/NotFound";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 
 import Products from "./pages/Shop/Products";
@@ -20,8 +21,10 @@ function App() {
 
           {/* <Route path="/shop" element={<Products />} />
           <Route path="/shop/:productId" element={<ProductDetail />} /> */}
+          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
         </Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        
       </Routes>
     </>
   );

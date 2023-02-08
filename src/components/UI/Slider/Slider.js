@@ -10,7 +10,7 @@ const sliderResponsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 5,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
     partialVisibilityGutter: 0,
   },
   tablet: {
@@ -40,10 +40,10 @@ const Slider = (props) => {
       ssr={true} // means to render carousel on server-side.
       infinite={false}
       //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-      autoPlay={false}
-      autoPlaySpeed={1000}
+      autoPlay={true}
+      autoPlaySpeed={2500}
       keyBoardControl={true}
-      customTransition="transform 500ms ease-in-out"
+      customTransition="transform 1000ms ease-in-out"
       transitionDuration={500}
       containerClass="slider-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}

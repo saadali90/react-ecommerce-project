@@ -4,8 +4,8 @@ import VerticalMenu from "../../../UI/VerticalMenu";
 
 import "./MainFooter.css";
 
-import IconIos from "../../../../assets/img/svg/icon-ios.svg";
-import IconAndroid from "../../../../assets/img/svg/icon-android.svg";
+import IconIos from "../../../../assets/img/badge-app-store.png";
+import IconAndroid from "../../../../assets/img/badge-google-play.png";
 import IconFacebook from "../../../../assets/img/svg/icon-facebook.svg";
 import IconTwitter from "../../../../assets/img/svg/icon-twitter.svg";
 import IconInstagram from "../../../../assets/img/svg/icon-instagram.svg";
@@ -170,10 +170,10 @@ const MainFooter = () => {
               <a href="/">California Notice of Financial Incentive</a>
             </div>
 
-            <h3 className="fmenu-heading">downloas our app</h3>
+            <h3 className="fmenu-heading">download our app</h3>
 
             <div className="app-icons-wrap">
-              <img className="app-icons" src={IconIos} alt="Appstore" />
+              <img className="app-icons" src={IconIos} alt="Appstore" /> <br />
               <img className="app-icons" src={IconAndroid} alt="playstore" />
             </div>
 

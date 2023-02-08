@@ -10,7 +10,7 @@ const MainNavigation = () => {
       <AppContainer>
         <ul className="main-navigation">
           <li>
-            <NavLink to="/shop"><strong> shop</strong></NavLink>
+            <NavLink to="/shop">shop</NavLink>
           </li>
           <li>
             <a href="/">bath</a>

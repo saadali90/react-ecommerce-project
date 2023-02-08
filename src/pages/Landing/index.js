@@ -12,15 +12,8 @@ import TopCategories from "../../components/Products/TopCategories";
 import Cta1 from "../../assets/img/cta1.jpg";
 import Cta2 from "../../assets/img/cta2.jpg";
 import Cta3 from "../../assets/img/cta3.jpg";
-import { useEffect } from "react";
-import { getAllProducts } from "../../lib/api";
 
 export const Landing = () => {
-
-  useEffect(() => {
-    getAllProducts();
-  }, []);
-
 
   return (
     <>
