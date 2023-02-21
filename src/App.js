@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/UI/Layout/Layout";
 import { Landing } from "./pages/Landing";
@@ -18,11 +18,10 @@ function App() {
             <Route index element={<Products />} />
             <Route path=":productId" element={<ProductDetail />} />
           </Route>
-
-          {/* <Route path="/shop" element={<Products />} />
-          <Route path="/shop/:productId" element={<ProductDetail />} /> */}
+          
+          <Route path="404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
-          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+
         </Route>
         
       </Routes>

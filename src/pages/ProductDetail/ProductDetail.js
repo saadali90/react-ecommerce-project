@@ -1,6 +1,6 @@
 import "./ProductDetail.css";
 
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import productsData from "../../components/Products/ProductsData";
 import AppContainer from "../../components/UI/AppContainer";
 import MainBanner from "../Landing/MainBanner";
@@ -13,6 +13,10 @@ const ProductDetail = () => {
   );
 
   console.log(currentProduct);
+
+  if (currentProduct === undefined) {
+    return <Navigate to="/400" />;
+  }
 
   return (
     <>
